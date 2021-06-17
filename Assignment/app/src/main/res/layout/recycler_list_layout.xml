@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/empName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                android:hint="Employee Name"
+                android:singleLine="true"
+                android:fontFamily="@font/exo2_bold"/>
+
+            <TextView
+                android:id="@+id/empSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/purple_700"
+                android:textSize="17sp"
+                android:hint="Employee Salary"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/rupee"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/purple_700"
+                android:fontFamily="@font/exo2_regular"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
